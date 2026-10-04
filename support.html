@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>家庭媒体支持</title>
+  <style>
+    :root { --bg:#10141c; --text:#f4f7fb; --muted:rgba(244,247,251,.72); --accent:#8eb6ff; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Noto Sans SC", sans-serif;
+      background: radial-gradient(900px 480px at 15% -10%, #24324d 0%, transparent 55%), var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 20px 96px; }
+    a { color: var(--accent); }
+    h1 { font-size: 32px; margin: 0 0 8px; }
+    h2 { font-size: 20px; margin-top: 36px; }
+    .meta, p, li { color: var(--muted); }
+    nav { display: flex; gap: 16px; flex-wrap: wrap; margin: 18px 0 28px; }
+    nav a { color: var(--muted); text-decoration: none; }
+    code { color: var(--text); }
+  </style>
+</head>
+<body>
+  <main>
+    <nav>
+      <a href="./index.html">首页</a>
+      <a href="./privacy.html">隐私政策</a>
+      <a href="./terms.html">使用条款</a>
+      <a href="./support.html">支持</a>
+    </nav>
+    <h1>支持</h1>
+    <p class="meta">家庭媒体是 Apple TV 上的 Emby 播放器。使用前请准备好你能访问的 Emby 服务器。</p>
+
+    <h2>常见问题</h2>
+    <ul>
+      <li><strong>如何添加服务器？</strong>打开应用，选择添加 Emby 服务器，填写地址和账号。局域网服务器需要允许本地网络访问。</li>
+      <li><strong>无法连接？</strong>地址请带上协议和端口，例如 <code>http://192.168.1.8:8096</code>。确认 Apple TV 和服务器在同一网络，账号密码正确，服务器防火墙已放行。</li>
+      <li><strong>能播放，但没有继续观看？</strong>播放进度由 Emby 保存。请确认登录的是同一个 Emby 用户，并在设置里打开续播。</li>
+      <li><strong>画质或转码？</strong>播放走你的 Emby 服务器。原盘能否直接播、是否需要转码，取决于服务器和片源，应用本身不带媒体库。</li>
+    </ul>
+
+    <h2>联系开发者</h2>
+    <p>邮件：<a href="mailto:zhuzhang135@163.com">zhuzhang135@163.com</a></p>
+    <p>请附上 Apple TV 型号、系统版本、家庭媒体版本，以及服务器地址的形式（不必写出密码）。</p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>家庭媒体</title>
+  <style>
+    :root { --bg:#10141c; --text:#f4f7fb; --muted:rgba(244,247,251,.72); --accent:#8eb6ff; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Noto Sans SC", sans-serif;
+      background: radial-gradient(900px 480px at 15% -10%, #24324d 0%, transparent 55%), var(--bg);
+      color: var(--text);
+    }
+    main { max-width: 640px; margin: 0 auto; padding: 72px 20px; }
+    .mark {
+      width: 72px; height: 72px; border-radius: 18px;
+      display: grid; place-items: center;
+      background: linear-gradient(160deg, #2a3d62, #182232);
+      font-weight: 650; letter-spacing: .04em;
+    }
+    h1 { margin: 20px 0 8px; font-size: 36px; }
+    p { color: var(--muted); line-height: 1.7; }
+    a { color: var(--accent); }
+    .links { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 28px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark">HM</div>
+    <h1>家庭媒体</h1>
+    <p>在 Apple TV 上连接你自己的 Emby 服务器，浏览媒体库并继续观看。家庭媒体不提供片源，也不附带服务器。</p>
+    <div class="links">
+      <a href="./privacy.html">隐私政策</a>
+      <a href="./terms.html">使用条款</a>
+      <a href="./support.html">支持</a>
+    </div>
+  </main>
+</body>
+</html>
